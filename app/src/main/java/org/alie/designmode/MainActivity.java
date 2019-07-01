@@ -6,6 +6,10 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
+import org.alie.designmode.methodfactory.ConnectDBFactoryBase;
+import org.alie.designmode.methodfactory.impl.JDBCConnectorFactory;
+import org.alie.designmode.methodfactory.impl.ODBCConnectorFactory;
+import org.alie.designmode.methodfactory.impl.OLEDBConnectorFactory;
 import org.alie.designmode.samplefactory.PlayerSkillsBase;
 import org.alie.designmode.samplefactory.SampleFactory;
 import org.alie.designmode.samplefactory.impl.IversonImpl;
@@ -47,12 +51,16 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
                 doTestSampleFactory();
                 break;
             case R.id.btn2:
+                doTestMethdoFactory();
                 break;
             case R.id.btn3:
                 break;
         }
     }
 
+    /**
+     * 简单工厂模式的例子，咱们就举一个 NBA球星 跳投，后仰，三分，扣篮的例子
+     */
     private void doTestSampleFactory() {
         String tag = null;
 //        tag = IversonImpl.TAG;
@@ -63,5 +71,18 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
         playerSkillsBase.fadeAway();
         playerSkillsBase.jumpShort();
         playerSkillsBase.slamDunk();
+    }
+
+    /**
+     * 方法工厂模式的例子，咱们就举一个 客户端连接远程数据库的方式的案例
+     */
+    private void doTestMethdoFactory() {
+        ConnectDBFactoryBase connectDBFactoryBase = null;
+//        connectDBFactoryBase = new JDBCConnectorFactory();
+        connectDBFactoryBase = new ODBCConnectorFactory();
+//        connectDBFactoryBase = new OLEDBConnectorFactory();
+        connectDBFactoryBase.doConnect();
+        connectDBFactoryBase.doOperate();
+        connectDBFactoryBase.doDisconnect();
     }
 }
