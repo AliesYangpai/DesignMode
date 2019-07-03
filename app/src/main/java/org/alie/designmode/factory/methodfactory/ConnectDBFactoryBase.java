@@ -1,4 +1,4 @@
-package org.alie.designmode.methodfactory;
+package org.alie.designmode.factory.methodfactory;
 
 /**
  * Created by Alie on 2019/7/1.

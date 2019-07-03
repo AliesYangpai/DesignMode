@@ -1,4 +1,4 @@
-package org.alie.designmode.samplefactory;
+package org.alie.designmode.factory.samplefactory;
 
 /**
  * Created by Alie on 2019/7/1.
