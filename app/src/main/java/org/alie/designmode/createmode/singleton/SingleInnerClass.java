@@ -1,4 +1,4 @@
-package org.alie.designmode.singleton;
+package org.alie.designmode.createmode.singleton;
 
 /**
  * Created by Alie on 2019/7/6.

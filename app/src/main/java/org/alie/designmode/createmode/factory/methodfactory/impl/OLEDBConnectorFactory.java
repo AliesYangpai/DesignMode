@@ -1,7 +1,7 @@
-package org.alie.designmode.factory.methodfactory.impl;
+package org.alie.designmode.createmode.factory.methodfactory.impl;
 
-import org.alie.designmode.factory.methodfactory.ConnectDBBase;
-import org.alie.designmode.factory.methodfactory.ConnectDBFactoryBase;
+import org.alie.designmode.createmode.factory.methodfactory.ConnectDBBase;
+import org.alie.designmode.createmode.factory.methodfactory.ConnectDBFactoryBase;
 
 /**
  * Created by Alie on 2019/7/1.

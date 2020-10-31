@@ -1,8 +1,8 @@
-package org.alie.designmode.factory.samplefactory;
+package org.alie.designmode.createmode.factory.samplefactory;
 
-import org.alie.designmode.factory.samplefactory.impl.IversonImpl;
-import org.alie.designmode.factory.samplefactory.impl.KoBeImpl;
-import org.alie.designmode.factory.samplefactory.impl.McGrady;
+import org.alie.designmode.createmode.factory.samplefactory.impl.IversonImpl;
+import org.alie.designmode.createmode.factory.samplefactory.impl.KoBeImpl;
+import org.alie.designmode.createmode.factory.samplefactory.impl.McGrady;
 
 /**
  * Created by Alie on 2019/7/1.

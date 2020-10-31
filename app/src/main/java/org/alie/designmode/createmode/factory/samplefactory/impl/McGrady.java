@@ -1,9 +1,9 @@
-package org.alie.designmode.factory.samplefactory.impl;
+package org.alie.designmode.createmode.factory.samplefactory.impl;
 
 import android.util.Log;
 
 import org.alie.designmode.MainActivity;
-import org.alie.designmode.factory.samplefactory.PlayerSkillsBase;
+import org.alie.designmode.createmode.factory.samplefactory.PlayerSkillsBase;
 
 /**
  * Created by Alie on 2019/7/1.

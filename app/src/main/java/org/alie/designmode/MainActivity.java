@@ -7,13 +7,13 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
-import org.alie.designmode.builder.Room;
-import org.alie.designmode.builder.RoomBuilder;
-import org.alie.designmode.factory.methodfactory.ConnectDBFactoryBase;
-import org.alie.designmode.factory.methodfactory.impl.ODBCConnectorFactory;
-import org.alie.designmode.factory.samplefactory.PlayerSkillsBase;
-import org.alie.designmode.factory.samplefactory.SampleFactory;
-import org.alie.designmode.factory.samplefactory.impl.McGrady;
+import org.alie.designmode.createmode.builder.Room;
+import org.alie.designmode.createmode.builder.RoomBuilder;
+import org.alie.designmode.createmode.factory.methodfactory.ConnectDBFactoryBase;
+import org.alie.designmode.createmode.factory.methodfactory.impl.ODBCConnectorFactory;
+import org.alie.designmode.createmode.factory.samplefactory.PlayerSkillsBase;
+import org.alie.designmode.createmode.factory.samplefactory.SampleFactory;
+import org.alie.designmode.createmode.factory.samplefactory.impl.McGrady;
 
 public class MainActivity extends AppCompatActivity implements OnClickListener {
 
