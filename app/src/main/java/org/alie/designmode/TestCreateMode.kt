@@ -1,5 +1,7 @@
 package org.alie.designmode
 
+import org.alie.designmode.createmode.factory.methodfactory.kt.FactoryCar
+import org.alie.designmode.createmode.factory.methodfactory.kt.FactoryPlush
 import org.alie.designmode.createmode.prototype.Person
 import org.alie.designmode.createmode.prototype.Student
 import org.alie.designmode.createmode.singleton.MySingleton
@@ -7,7 +9,8 @@ import org.alie.designmode.createmode.singleton.MySingleton
 fun main(array: Array<String>) {
 //    testSingleton()
 //    testProtoType1()
-    testProtoType2()
+//    testProtoType2()
+    testFactoryMethod()
 }
 
 
@@ -68,4 +71,22 @@ fun testProtoType2() {
             "personClone name:${personClone.name} personClone age:${personClone.age},list:${personClone.list?.get(0)}")
 
 
+}
+
+/**
+ * 工厂方法模式
+ * 【一个工厂一个产品，有多少产品，就有多少子工厂实例】
+ */
+fun testFactoryMethod() {
+    FactoryCar().createToy().let {
+        it.loadBattery("充电电池")
+        it.turnOn()
+        it.turnOff()
+    }
+
+    FactoryPlush().createToy().let {
+        it.loadBattery("5号电池")
+        it.turnOn()
+        it.turnOff()
+    }
 }
