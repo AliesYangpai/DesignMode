@@ -1,5 +1,6 @@
 package org.alie.designmode
 
+import org.alie.designmode.createmode.factory.abstractfactory.YangPaiFarm
 import org.alie.designmode.createmode.factory.methodfactory.kt.FactoryCar
 import org.alie.designmode.createmode.factory.methodfactory.kt.FactoryPlush
 import org.alie.designmode.createmode.prototype.Person
@@ -10,7 +11,8 @@ fun main(array: Array<String>) {
 //    testSingleton()
 //    testProtoType1()
 //    testProtoType2()
-    testFactoryMethod()
+//    testFactoryMethod()
+    testAbstractFactoryMethod()
 }
 
 
@@ -88,5 +90,16 @@ fun testFactoryMethod() {
         it.loadBattery("5号电池")
         it.turnOn()
         it.turnOff()
+    }
+}
+
+/**
+ * 抽象工厂
+ */
+fun testAbstractFactoryMethod() {
+    YangPaiFarm().let {
+        it.createAnimal().eat("grass")
+        it.createPlant().watered()
+        it.createTool().using()
     }
 }

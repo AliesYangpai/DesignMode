@@ -4,10 +4,10 @@ import org.alie.designmode.createmode.factory.abstractfactory.Animal
 
 class Cow : Animal() {
     override fun eat(food: String) {
-        println("===eat $food")
+        println("===Cow eat $food")
     }
 
     override fun sleep() {
-        println("===sleep cow")
+        println("===Cow sleep cow")
     }
 }
