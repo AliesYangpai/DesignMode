@@ -10,6 +10,6 @@ this is some simple of design mode
               抽象工厂
               建造者
 ## 结构型：
-              待补充
+              代理（普通代理、动态代理）
 ## 行为型：
               待补充
