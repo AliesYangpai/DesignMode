@@ -1,2 +1,3 @@
+include ':lib_design_mode_behavior'
 include ':lib_design_mode_create'
 include ':app'
