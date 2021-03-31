@@ -12,4 +12,4 @@ this is some simple of design mode
 ## 结构型：
               代理（普通代理、动态代理）
 ## 行为型：
-              待补充
+              观察者模式

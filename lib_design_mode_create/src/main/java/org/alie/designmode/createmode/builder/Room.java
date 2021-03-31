@@ -2,8 +2,8 @@ package org.alie.designmode.createmode.builder;
 
 /**
  * Created by Alie on 2019/7/3.
- * ç±»æè¿°
- * ç‰ˆæœ¬
+ * ÀàÃèÊö
+ * °æ±¾
  */
 public class Room {
     private String mWall;

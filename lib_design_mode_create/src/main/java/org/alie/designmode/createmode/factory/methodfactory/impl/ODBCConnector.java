@@ -1,8 +1,6 @@
 package org.alie.designmode.createmode.factory.methodfactory.impl;
 
-import android.util.Log;
 
-import org.alie.designmode.MainActivity;
 import org.alie.designmode.createmode.factory.methodfactory.ConnectDBBase;
 
 /**
@@ -15,16 +13,16 @@ public class ODBCConnector implements ConnectDBBase {
 
     @Override
     public void connect() {
-        Log.i(MainActivity.TAG, TAG + "====connect");
+        System.out.println("====connect");
     }
 
     @Override
     public void operate() {
-        Log.i(MainActivity.TAG, TAG + "====operate");
+        System.out.println("====operate");
     }
 
     @Override
     public void disconnect() {
-        Log.i(MainActivity.TAG, TAG + "====disconnect");
+        System.out.println("====disconnect");
     }
 }

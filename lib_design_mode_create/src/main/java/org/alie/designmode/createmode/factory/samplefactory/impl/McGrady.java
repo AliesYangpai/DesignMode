@@ -1,8 +1,6 @@
 package org.alie.designmode.createmode.factory.samplefactory.impl;
 
-import android.util.Log;
 
-import org.alie.designmode.MainActivity;
 import org.alie.designmode.createmode.factory.samplefactory.PlayerSkillsBase;
 
 /**
@@ -14,21 +12,21 @@ public class McGrady implements PlayerSkillsBase {
     public static final String TAG = "McGrady";
     @Override
     public void slamDunk() {
-        Log.i(MainActivity.TAG, TAG + "==slamDunk");
+        System.out.println("===slamDunk");
     }
 
     @Override
     public void jumpShort() {
-        Log.i(MainActivity.TAG, TAG + "==jumpShort");
+        System.out.println("===jumpShort");
     }
 
     @Override
     public void fadeAway() {
-        Log.i(MainActivity.TAG, TAG + "==fadeAway");
+        System.out.println("===fadeAway");
     }
 
     @Override
     public void threePointer() {
-        Log.i(MainActivity.TAG, TAG + "==threePointer");
+        System.out.println("===threePointer");
     }
 }
