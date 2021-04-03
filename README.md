@@ -11,5 +11,6 @@ this is some simple of design mode
               建造者
 ## 结构型：
               代理（普通代理、动态代理）
+              装饰器
 ## 行为型：
               观察者模式

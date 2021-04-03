@@ -1,11 +1,6 @@
 package com.alie.libdesignmodebehavior.observer.part1java;
 
 
-import com.alie.libdesignmodebehavior.observer.part1java.RichMan1;
-import com.alie.libdesignmodebehavior.observer.part1java.RichMan2;
-import com.alie.libdesignmodebehavior.observer.part1java.RichMan3;
-import com.alie.libdesignmodebehavior.observer.part1java.ZhangSan;
-
 public class HolderJava {
     public static void main(String[] args) {
         System.out.println("张三开始借钱。。。");
