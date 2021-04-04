@@ -1,6 +1,8 @@
-﻿package com.alie.libdesignmodebehavior.decorate
+﻿package com.alie.libdesignmodestructure.decorate
 
-class G1Bot(var name:String = ""):IRobot {
+
+
+class G1Bot(var name:String = ""): IRobot {
     override fun speak() {
         println("$name 说话")
     }

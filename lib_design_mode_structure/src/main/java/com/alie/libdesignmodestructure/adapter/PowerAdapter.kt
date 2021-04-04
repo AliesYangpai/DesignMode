@@ -1,4 +1,4 @@
-﻿package com.alie.libdesignmodebehavior.adapter
+﻿import com.alie.libdesignmodestructure.adapter.IPowerAdapter
 
 class PowerAdapter : IPowerAdapter {
     //    override fun transVoltageTo1_5(currentVoltage: Float): Float = currentVoltage.let {

@@ -1,9 +1,11 @@
-﻿package com.alie.libdesignmodebehavior.adapter
+﻿package com.alie.libdesignmodestructure.adapter
+
+import PowerAdapter
 
 
 class CarToy(var mName: String = "", var mVoltage: Float = 0F ) {
 
-    private var mVoltageAdapter =PowerAdapter()
+    private var mVoltageAdapter = PowerAdapter()
 
     /**
      * doPlay方法也有点外观模式的意思

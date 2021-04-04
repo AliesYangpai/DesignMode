@@ -1,4 +1,4 @@
-﻿package com.alie.libdesignmodebehavior.decorate
+﻿package com.alie.libdesignmodestructure.decorate
 
 interface IRobot {
     fun speak()

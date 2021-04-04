@@ -1,4 +1,4 @@
-﻿package com.alie.libdesignmodebehavior.facade
+﻿package com.alie.libdesignmodestructure.facade
 
 class PoliceOffice {
     fun policeVerify() {
