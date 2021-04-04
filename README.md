@@ -12,5 +12,7 @@ this is some simple of design mode
 ## 结构型：
               代理（普通代理、动态代理）
               装饰器
+              适配器
+              外观 
 ## 行为型：
               观察者模式

@@ -1,3 +1,5 @@
+include ':lib_design_mode_structure'
 include ':lib_design_mode_behavior'
 include ':lib_design_mode_create'
 include ':app'
+rootProject.name = "DesignMode"
