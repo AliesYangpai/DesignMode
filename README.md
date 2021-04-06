@@ -14,5 +14,8 @@ this is some simple of design mode
               装饰器
               适配器
               外观 
+              享元  
 ## 行为型：
-              观察者模式
+              观察者模式  
+              状态模式
+              策略模式
