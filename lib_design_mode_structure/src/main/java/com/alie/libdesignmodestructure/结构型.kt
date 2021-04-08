@@ -4,6 +4,7 @@ import com.alie.libdesignmodestructure.adapter.CarToy
 import com.alie.libdesignmodestructure.decorate.G1Bot
 import com.alie.libdesignmodestructure.decorate.G1BotDecorate
 import com.alie.libdesignmodestructure.facade.Person
+import com.alie.libdesignmodestructure.flyweight.WeaponPool
 
 /**
  * 装饰模式
@@ -38,8 +39,21 @@ fun doTest03() {
     person.proveYourSelf()
 }
 
+/**
+ * 享元模式
+ */
+fun doTest04() {
+    WeaponPool().let {
+        it.getWeapon("A")?.attack()
+        it.getWeapon("B")?.attack()
+        it.getWeapon("C")?.attack()
+        it.getWeapon("B")?.attack()
+        it.getWeapon("xxxxx")?.attack()
+    }
+}
 fun main(array: Array<String>) {
 //    doTest01()//【装饰模式】老张爆改机器人
 //    doTest02()//【适配器模式】玩具车上电
-    doTest03()//【外观模式】老张办手续
+//    doTest03()//【外观模式】老张办手续
+    doTest04();//【享元模式】老张拿武器
 }
