@@ -19,3 +19,4 @@ this is some simple of design mode
               观察者模式  
               状态模式
               策略模式
+              责任链模式
