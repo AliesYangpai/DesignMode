@@ -3,8 +3,10 @@ package com.alie.libdesignmodecreate
 import com.alie.libdesignmodecreate.createmode.factory.samplefactory.review1.PhoneFactory
 import com.alie.libdesignmodecreate.createmode.factory.samplefactory.review1.TAG_SMART_PHONE
 import com.alie.libdesignmodecreate.createmode.prototype.Student
-import org.alie.designmode.createmode.factory.abstractfactory.YangPaiFarm
-import org.alie.designmode.createmode.factory.methodfactory.kt.FactoryCar
+import com.alie.libdesignmodecreate.createmode.factory.abstractfactory.YangPaiFarm
+import com.alie.libdesignmodecreate.createmode.factory.methodfactory.kt.FactoryCar
+import com.alie.libdesignmodecreate.createmode.factory.methodfactory.review1.SmartPhoneFactory
+import com.alie.libdesignmodecreate.createmode.factory.samplefactory.review1.SmartPhone
 import org.alie.designmode.createmode.factory.methodfactory.kt.FactoryPlush
 import org.alie.designmode.createmode.prototype.Person
 import org.alie.designmode.createmode.singleton.MySingleton
@@ -16,6 +18,7 @@ fun main(array: Array<String>) {
 //    testFactoryMethod()
 //    testAbstractFactoryMethod()
     testReview01()
+    testReview02()
 }
 
 
@@ -129,6 +132,20 @@ fun testAbstractFactoryMethod() {
  */
 fun testReview01() {
     val phone = PhoneFactory.create(TAG_SMART_PHONE)
+    phone.call()
+    phone.playGame()
+}
+
+/**
+ * review 工厂模式
+ * 1.由于简单工厂在新增类型的时候，需要改动 工厂类，不符合开闭原则，因此
+ * 诞生工厂类
+ * 【注意】即便如此，这里生产的也是统一类型的产品
+ * 工厂-产线-产品
+ */
+fun testReview02() {
+    println("===testReview02")
+    val phone = SmartPhoneFactory.create()
     phone.call()
     phone.playGame()
 }

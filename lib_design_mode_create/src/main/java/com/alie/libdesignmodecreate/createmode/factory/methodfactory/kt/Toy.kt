@@ -1,4 +1,4 @@
-package org.alie.designmode.createmode.factory.methodfactory.kt
+package com.alie.libdesignmodecreate.createmode.factory.methodfactory.kt
 
 abstract class Toy {
     abstract fun loadBattery(battery: String)

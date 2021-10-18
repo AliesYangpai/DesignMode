@@ -1,5 +1,6 @@
-package org.alie.designmode.createmode.factory.abstractfactory
+package com.alie.libdesignmodecreate.createmode.factory.abstractfactory
 
+import org.alie.designmode.createmode.factory.abstractfactory.IFarmFactory
 import org.alie.designmode.createmode.factory.abstractfactory.bean.Cow
 import org.alie.designmode.createmode.factory.abstractfactory.bean.Pumpkin
 import org.alie.designmode.createmode.factory.abstractfactory.bean.Sickle
