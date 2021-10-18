@@ -68,7 +68,6 @@ fun testProtoType2() {
     person.name = "Jerry"
     person.age = 15
     person.list?.set(0, "a")
-
     println(" 更改前： person name:${person.name},person age:${person.age},list:${person.list?.get(0)}" +
             "personClone name:${personClone.name} personClone age:${personClone.age},list:${personClone.list?.get(0)}")
 
