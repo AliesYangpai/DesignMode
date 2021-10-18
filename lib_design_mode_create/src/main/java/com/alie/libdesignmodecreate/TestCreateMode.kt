@@ -1,5 +1,7 @@
 package com.alie.libdesignmodecreate
 
+import com.alie.libdesignmodecreate.createmode.factory.samplefactory.review1.PhoneFactory
+import com.alie.libdesignmodecreate.createmode.factory.samplefactory.review1.TAG_SMART_PHONE
 import com.alie.libdesignmodecreate.createmode.prototype.Student
 import org.alie.designmode.createmode.factory.abstractfactory.YangPaiFarm
 import org.alie.designmode.createmode.factory.methodfactory.kt.FactoryCar
@@ -12,7 +14,8 @@ fun main(array: Array<String>) {
 //    testProtoType1()
 //    testProtoType2()
 //    testFactoryMethod()
-    testAbstractFactoryMethod()
+//    testAbstractFactoryMethod()
+    testReview01()
 }
 
 
@@ -40,14 +43,18 @@ fun testProtoType1() {
 
     student.stringList = list
     val studentClone = student.clone()
-    println(" 更改前： student name:${student.name},student age:${student.age},list:${list[0]}" +
-            "studentClone name:${studentClone.name} studentClone age:${studentClone.age},list:${list[0]}")
+    println(
+        " 更改前： student name:${student.name},student age:${student.age},list:${list[0]}" +
+                "studentClone name:${studentClone.name} studentClone age:${studentClone.age},list:${list[0]}"
+    )
 
     student.name = "Jerry"
     student.age = 15
     student.stringList[0] = "a"
-    println(" 更改后： student name:${student.name},student age:${student.age},list:${list[0]}" +
-            "studentClone name:${studentClone.name} studentClone age:${studentClone.age},list:${list[0]}")
+    println(
+        " 更改后： student name:${student.name},student age:${student.age},list:${list[0]}" +
+                "studentClone name:${studentClone.name} studentClone age:${studentClone.age},list:${list[0]}"
+    )
 
 
 }
@@ -62,14 +69,26 @@ fun testProtoType2() {
     }
 
     val personClone = person.clone()
-    println(" 更改前： person name:${person.name},person age:${person.age},list:${person.list?.get(0)}" +
-            "personClone name:${personClone.name} personClone age:${personClone.age},list:${personClone.list?.get(0)}")
+    println(
+        " 更改前： person name:${person.name},person age:${person.age},list:${person.list?.get(0)}" +
+                "personClone name:${personClone.name} personClone age:${personClone.age},list:${
+                    personClone.list?.get(
+                        0
+                    )
+                }"
+    )
 
     person.name = "Jerry"
     person.age = 15
     person.list?.set(0, "a")
-    println(" 更改前： person name:${person.name},person age:${person.age},list:${person.list?.get(0)}" +
-            "personClone name:${personClone.name} personClone age:${personClone.age},list:${personClone.list?.get(0)}")
+    println(
+        " 更改前： person name:${person.name},person age:${person.age},list:${person.list?.get(0)}" +
+                "personClone name:${personClone.name} personClone age:${personClone.age},list:${
+                    personClone.list?.get(
+                        0
+                    )
+                }"
+    )
 
 
 }
@@ -101,4 +120,15 @@ fun testAbstractFactoryMethod() {
         it.createPlant().watered()
         it.createTool().using()
     }
+}
+
+/**
+ * review 简单工厂
+ * 注意，这里是一个工厂类 生产一类产品，因此
+ * 子类应该是有一个统一的父类
+ */
+fun testReview01() {
+    val phone = PhoneFactory.create(TAG_SMART_PHONE)
+    phone.call()
+    phone.playGame()
 }
