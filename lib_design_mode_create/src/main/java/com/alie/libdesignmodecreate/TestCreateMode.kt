@@ -7,6 +7,7 @@ import com.alie.libdesignmodecreate.createmode.factory.abstractfactory.YangPaiFa
 import com.alie.libdesignmodecreate.createmode.factory.methodfactory.kt.FactoryCar
 import com.alie.libdesignmodecreate.createmode.factory.methodfactory.review1.SmartPhoneFactory
 import com.alie.libdesignmodecreate.createmode.factory.samplefactory.review1.SmartPhone
+import com.alie.libdesignmodecreate.createmode.prototype.review1.Phone
 import org.alie.designmode.createmode.factory.methodfactory.kt.FactoryPlush
 import org.alie.designmode.createmode.prototype.Person
 import org.alie.designmode.createmode.singleton.MySingleton
@@ -19,6 +20,7 @@ fun main(array: Array<String>) {
 //    testAbstractFactoryMethod()
     testReview01()
     testReview02()
+    testReview03()
 }
 
 
@@ -148,4 +150,15 @@ fun testReview02() {
     val phone = SmartPhoneFactory.create()
     phone.call()
     phone.playGame()
+}
+
+/**
+ * 原型模式
+ */
+fun testReview03() {
+    println("===testReview03")
+    val phone = Phone("IPHONE","APPLE",5600F)
+    val clonePhone = phone.clone()
+    println(" phone.name = ${phone.name} clonePhone.name = ${clonePhone.name}")
+    println(" phone.hashCode = ${phone.hashCode()} clonePhone.hashCode = ${clonePhone.hashCode()}")
 }
