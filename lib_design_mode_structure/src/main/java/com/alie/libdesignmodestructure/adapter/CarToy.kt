@@ -1,7 +1,5 @@
 ﻿package com.alie.libdesignmodestructure.adapter
 
-import PowerAdapter
-
 
 class CarToy(var mName: String = "", var mVoltage: Float = 0F ) {
 
