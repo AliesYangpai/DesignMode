@@ -9,6 +9,7 @@ import com.alie.libdesignmodebehavior.strategy.DualShock
 import com.alie.libdesignmodebehavior.strategy.KeyBoard
 import com.alie.libdesignmodebehavior.strategy.Player
 import com.alie.libdesignmodebehavior.strategy.VrMachine
+import com.alie.libdesignmodebehavior.strategy.review1.*
 
 
 /**
@@ -51,8 +52,19 @@ fun doTest03() {
     println("===反馈结果:$ret")
 }
 
+/**
+ * 【策略模式】洗衣机的清洗和甩干
+ */
+fun doTest04() {
+    WashManger.INSTANCE.wash(FastWash())
+    WashManger.INSTANCE.spinDry(FastDry())
+    WashManger.INSTANCE.wash(StanderWash())
+    WashManger.INSTANCE.spinDry(StanderDry())
+}
+
 fun main(array: Array<String>) {
 //    doTest01()//【状态模式】alie不同心情下的日常
 //    doTest02()//【策略模式】alie用不同的机器玩海战
-    doTest03()//【责任链模式】alie请假流程
+//    doTest03()//【责任链模式】alie请假流程
+    doTest04()//【策略模式】洗衣机的清晰模式
 }
