@@ -1,14 +1,13 @@
 package com.alie.libdesignmodebehavior
 
 import com.alie.libdesignmodebehavior.chainresponsibility.*
+import com.alie.libdesignmodebehavior.observer.review1.*
 import com.alie.libdesignmodebehavior.state.AlieBean
 import com.alie.libdesignmodebehavior.state.AlieDailyWork
 import com.alie.libdesignmodebehavior.state.HappyPersonalEmotion
 import com.alie.libdesignmodebehavior.state.SadPersonalEmotion
 import com.alie.libdesignmodebehavior.strategy.DualShock
-import com.alie.libdesignmodebehavior.strategy.KeyBoard
 import com.alie.libdesignmodebehavior.strategy.Player
-import com.alie.libdesignmodebehavior.strategy.VrMachine
 import com.alie.libdesignmodebehavior.strategy.review1.*
 
 
@@ -62,9 +61,23 @@ fun doTest04() {
     WashManger.INSTANCE.spinDry(StanderDry())
 }
 
+/**
+ * 【观察者&策略】节假日节目更新
+ */
+fun doTest05() {
+    println("===doTest05()")
+    GamePlatformMgr.instance.register(User("aa"))
+    GamePlatformMgr.instance.register(User("bb"))
+    GamePlatformMgr.instance.register(User("cc"))
+    GamePlatformMgr.instance.notifyAllMember(BlackFriday())
+    GamePlatformMgr.instance.notifyAllMember(Halloween())
+    GamePlatformMgr.instance.notifyAllMember(Christmas())
+}
+
 fun main(array: Array<String>) {
 //    doTest01()//【状态模式】alie不同心情下的日常
 //    doTest02()//【策略模式】alie用不同的机器玩海战
 //    doTest03()//【责任链模式】alie请假流程
-    doTest04()//【策略模式】洗衣机的清晰模式
+//    doTest04()//【策略模式】洗衣机的清晰模式
+      doTest05()//【观察者&策略】节假日节目更新
 }
